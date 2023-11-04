@@ -2483,7 +2483,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="0" y="100" width="350" height="450"/>
+                  <AbsoluteConstraints x="10" y="110" width="330" height="440"/>
                 </Constraint>
               </Constraints>
 
@@ -2688,7 +2688,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="0" y="0" width="350" height="120"/>
+                  <AbsoluteConstraints x="10" y="10" width="330" height="120"/>
                 </Constraint>
               </Constraints>
 
@@ -2706,7 +2706,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value=" *********************Store_Name*************************&#xa;       Time 20:53:22 Date : 28 october 2023&#xa; *************************************************************&#xa;   Name                                       Price&#xa; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  &#xa;"/>
+                    <Property name="text" type="java.lang.String" value=" *********************Store_Name***********************&#xa;       Time 20:53:22 Date : 28 october 2023&#xa; ************************************************************&#xa;   Name                                       Price&#xa;  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  "/>
                   </Properties>
                 </Component>
               </SubComponents>

@@ -986,7 +986,7 @@ public class BillGeneration extends javax.swing.JFrame  {
         jTextArea1.setTabSize(15);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 350, 450));
+        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 330, 440));
 
         TotalSection.setBackground(new java.awt.Color(153, 255, 0));
         TotalSection.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
@@ -1061,10 +1061,10 @@ public class BillGeneration extends javax.swing.JFrame  {
         jTextArea2.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText(" *********************Store_Name*************************\n       Time 20:53:22 Date : 28 october 2023\n *************************************************************\n   Name                                       Price\n _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  \n");
+        jTextArea2.setText(" *********************Store_Name***********************\n       Time 20:53:22 Date : 28 october 2023\n ************************************************************\n   Name                                       Price\n  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  ");
         jScrollPane2.setViewportView(jTextArea2);
 
-        jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 120));
+        jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 330, 120));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, 350, 740));
 
@@ -1253,8 +1253,8 @@ public class BillGeneration extends javax.swing.JFrame  {
 
     private void PrintBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrintBtnActionPerformed
         if(itemCount !=0 && cleared == 0){
-        String a = " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
-        s = s +"\n"+a+ "\nItems: "+itemCount+" GST: "+Gst+" Total Amt: "+Total+"\n"+a;
+        String a = "  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  ";
+        s = s +"\n"+a+ "\n Items: "+itemCount+" GST: "+Gst+" Total Amt: "+Total+"\n"+a;
         jTextArea1.setText(s);
         printComponenet(jTextArea1);
         itemCount = 0;
