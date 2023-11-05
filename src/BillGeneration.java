@@ -1,4 +1,5 @@
-
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -12,6 +13,10 @@ public class BillGeneration extends javax.swing.JFrame  {
    
     public BillGeneration() {
         initComponents();
+        LocalDateTime myObj = LocalDateTime.now();
+        String s ;
+        s = ""+myObj;
+        DateLabel.setText(s);
     }
   
     //JTextArea jTextArea1 = new JTextArea();
@@ -25,6 +30,7 @@ public class BillGeneration extends javax.swing.JFrame  {
     String a;int cleared = 0;
   
     double SubTotal,Gst,Total,Price;
+    
     
       public void Calculate(double a){
         SubTotal = SubTotal + a;
@@ -165,6 +171,7 @@ public class BillGeneration extends javax.swing.JFrame  {
         SizeLabel16 = new javax.swing.JLabel();
         ShoeSize5 = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
+        DateLabel = new javax.swing.JLabel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -949,6 +956,12 @@ public class BillGeneration extends javax.swing.JFrame  {
         jTabbedPane2.addTab("tab1", jPanel2);
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        DateLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
+        DateLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DateLabel.setText("XX/XX/XX");
+        jPanel3.add(DateLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 360, 70));
+
         jTabbedPane2.addTab("tab2", jPanel3);
 
         jTabbedPane1.addTab("", jTabbedPane2);
@@ -1342,6 +1355,7 @@ public class BillGeneration extends javax.swing.JFrame  {
     private javax.swing.JMenu CheckBills;
     private javax.swing.JButton ClearBtn;
     private javax.swing.JMenuItem DashboardOptn;
+    private javax.swing.JLabel DateLabel;
     private javax.swing.JMenuItem FormalsOptn;
     private javax.swing.JLabel GSTLabel;
     private javax.swing.JLabel GSTSection;
